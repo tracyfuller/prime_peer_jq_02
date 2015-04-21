@@ -1,3 +1,41 @@
-table{
-	background-color: lightgrey;
+body {
+	font: 14px Georgia, sans-serif;
+	color: white;
+}
+
+button{
+	border-radius: 10px;
+	padding: 15px;
+}
+
+#ourTable {
+	background-color: #333333;
+	width: 45%;
+}
+.row {
+	display: table-row;
+}
+
+.propertyCell {
+	display: table-cell;
+	width: 35%;
+	padding: 5px 15px 5px 15px;
+	
+}
+.feetCell {
+	display: table-cell;
+	width: 25%;
+	padding: 5px 15px 5px 15px;
+}
+
+.priceCell {
+	display: table-cell;
+	width: 25%;
+	padding: 5px 15px 5px 15px;
+}
+
+.buttonCell	{
+	display: table-cell;
+	width: 15%;
+	padding: 5px 15px 5px 15px;
 }

@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
 
-		$('#ourTable').append("<div><tr><td>Property ID : " + propertyId + "</td><td>" + squareFeet + " Sq. Ft.</td><td>$" + pricePerFoot + " / sq.ft.</td><td> <button class='removeButton'>Remove</button></td></tr></div>");
+		$('#ourTable').append("<div class = 'row'><div class='propertyCell'>Property ID : " + propertyId + "</div><div class='feetCell'>" + squareFeet + " Sq. Ft.</div><div class='priceCell'>$" + pricePerFoot + " / sq.ft.</div><div class='buttonCell'> <button class='removeButton'>Remove</button></div></div>");
 
 		var el = $('#ourTable').children().last();
 		el.hide().slideDown(1000);	
@@ -20,7 +20,7 @@ $(document).ready(function(){
 	});
 
 	$('#ourTable').on('click', '.removeButton', function(){
-		$(this).parents('div').remove();
+		$(this).parents('.row').remove();
 	});
 
 
